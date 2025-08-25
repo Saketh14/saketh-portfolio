@@ -44,3 +44,26 @@ document.querySelectorAll('main section[id]').forEach(sec => io.observe(sec));
 
 // Year
 yearEl.textContent = new Date().getFullYear();
+
+// ---- Projects filter ----
+const filterButtons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.p-card');
+
+function applyFilter(tag) {
+  cards.forEach(card => {
+    const tags = (card.getAttribute('data-tags') || '').split(',').map(t => t.trim());
+    const show = tag === 'all' || tags.includes(tag);
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(btn.getAttribute('data-filter'));
+  });
+});
+
+// initial
+applyFilter('all');
