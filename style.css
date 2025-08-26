@@ -34,12 +34,14 @@ body {
 
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
-  background: radial-gradient(1200px 1200px at 120% -20%, rgba(34, 211, 238, .15), transparent 50%),
-    radial-gradient(1000px 1000px at -20% 120%, rgba(167, 139, 250, .15), transparent 40%),
-    var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(40% 50% at 10% 20%, rgba(14,165,233,0.25), transparent 60%),
+    radial-gradient(35% 45% at 80% 30%, rgba(139,92,246,0.25), transparent 60%),
+    radial-gradient(30% 40% at 50% 90%, rgba(236,72,153,0.18), transparent 70%);
+  background-attachment: fixed;
 }
 
 img {

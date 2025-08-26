@@ -66,23 +66,17 @@
     <section id="home" class="section hero">
       <div class="hero-inner container">
         <div class="hero-text">
-          <p class="eyebrow">Full‑Stack Web Developer</p>
+          <p class="eyebrow">Full-Stack Web Developer</p>
           <h1>Hi, I’m <span class="accent">Saketh Uppuluri Sai</span></h1>
           <p class="tagline">PHP • Laravel • WordPress • Drupal • React • SEO</p>
           <p class="subtag">
-            I craft fast, accessible, and SEO‑friendly web experiences. 5+ years across product and agency work, from
-            performance and security to delightful front‑end user journeys.
+            I craft fast, accessible, and SEO-friendly web experiences. 5+ years across product and agency work, from
+            performance and security to delightful front-end user journeys.
           </p>
           <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn outline" href="assets/Saketh_Uppuluri_Sai_Resume.pdf" download>Download Resume</a>
+            <a class="btn primary" href="assets/Saketh_Uppuluri_Sai_Resume.pdf" download>Download Resume</a>
           </div>
-          <ul class="quick-contacts">
-            <li>📧 <a href="mailto:saisakethuppuluri@gmail.com">saisakethuppuluri@gmail.com</a></li>
-            <li>📞 <a href="tel:+16823580556">+1 (682) 358‑0556</a></li>
-            <li>🔗 <a href="https://www.linkedin.com/in/saketh-uppuluri-sai" target="_blank"
-                rel="noreferrer">LinkedIn</a></li>
-          </ul>
+          <!-- Removed quick-contacts list on purpose -->
         </div>
         <div class="hero-media float">
           <img src="assets/photo.jpeg" width="240" height="240" alt="Avatar placeholder for Saketh" />
@@ -90,6 +84,7 @@
       </div>
       <div class="hero-glow"></div>
     </section>
+
 
     <!-- About -->
     <section id="about" class="section">
@@ -190,68 +185,84 @@
       <div class="container">
         <h2>Projects</h2>
     
-        <!-- Filter bar -->
-        <div class="filters" role="toolbar" aria-label="Project filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="wordpress">WordPress</button>
-          <button class="filter-btn" data-filter="seo">SEO</button>
-          <button class="filter-btn" data-filter="ai">AI / CV</button>
-          <button class="filter-btn" data-filter="python">Python</button>
-          <button class="filter-btn" data-filter="laravel">Laravel</button>
-          <button class="filter-btn" data-filter="react">React</button>
-        </div>
-    
         <div class="grid project-grid">
-          <!-- AI / CV -->
-          <article class="p-card" data-tags="ai,cv,python">
+          <!-- PropKingdom -->
+          <article class="p-card">
+            <h3><a class="project-link" href="http://propkingdom.in/" target="_blank" rel="noreferrer">PropKingdom</a></h3>
+            <p>
+              Corporate real-estate portal built on WordPress with Elementor and custom post types for properties.
+              Implemented
+              advanced search & filtering for location/price/amenities, hardened security via weekly audits, and optimized
+              Core Web Vitals.
+              Configured Yoast + schema.org to lift organic traffic by ~40% in three months.
+            </p>
+            <p class="stack"><strong>Stack:</strong> WordPress, Elementor, PHP, MySQL, Yoast SEO</p>
+          </article>
+    
+          <!-- Apna Food Truck -->
+          <article class="p-card">
+            <h3><a class="project-link" href="https://obstinatechefs.com/" target="_blank" rel="noreferrer">Apna Food
+                Truck</a></h3>
+            <p>
+              SEO-first marketing site for a local food business featuring menu management, daily location schedule, and
+              reviews.
+              Added Restaurant schema, image optimization, and internal-link strategy; achieved first-page ranking for
+              target keywords
+              within 3 months and boosted organic traffic ~15%.
+            </p>
+            <p class="stack"><strong>Stack:</strong> WordPress, PHP, Yoast SEO, Schema.org</p>
+          </article>
+    
+          <!-- Traffic Violation Detection System -->
+          <article class="p-card">
             <h3>Traffic Violation Detection System</h3>
-            <p>Real‑time detection of helmet/speed violations (10k+ labeled images), automated reporting.</p>
-            <p class="stack"><strong>Stack:</strong> PyTorch, YOLOv5, OpenCV</p>
+            <p>
+              Real-time CV pipeline to flag helmet and speed violations from roadside footage. Trained YOLOv5 on 10k+
+              images,
+              tuned NMS & confidence thresholds, and exported reports with cropped evidence frames for authorities. Designed
+              for
+              sub-100ms inference per frame on GPU.
+            </p>
+            <p class="stack"><strong>Stack:</strong> PyTorch, YOLOv5, OpenCV, Python</p>
           </article>
     
-          <!-- Python -->
-          <article class="p-card" data-tags="python">
+          <!-- Personal Finance Tracker -->
+          <article class="p-card">
             <h3>Personal Finance Tracker</h3>
-            <p>OCR receipt scanning; 500+ receipts/week; dashboards lifted engagement by 20%.</p>
-            <p class="stack"><strong>Stack:</strong> Python, Selenium, Flask</p>
+            <p>
+              Web app with OCR-based receipt capture and automated categorization. Built validation rules to reduce parsing
+              errors,
+              monthly summaries with charts, and CSV export for accountants. Handles 500+ receipts/week with clear audit
+              trails.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Python, Selenium, Flask, SQLite/CSV</p>
           </article>
     
-          <!-- Laravel + React -->
-          <article class="p-card" data-tags="laravel,react">
-            <h3>Volunteer App for MS Graduates</h3>
-            <p>AI fraud detection (‑40% plagiarism); real‑time leaderboard via WebSockets.</p>
-            <p class="stack"><strong>Stack:</strong> Laravel, Node.js, React</p>
+          <!-- Volunteer App -->
+          <article class="p-card">
+            <h3>Volunteer Application for MS Graduates</h3>
+            <p>
+              Collaboration platform with contribution tracking and fraud-detection signals (plagiarism reduction by ~40%).
+              Implemented a real-time leaderboard with WebSockets and granular audit logs. JWT auth + role-based access for
+              secure workflows.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Laravel, Node.js, React, WebSockets</p>
           </article>
     
-          <!-- WordPress + SEO (PropKingdom) -->
-          <article class="p-card" data-tags="wordpress,seo">
-            <h3>
-              <a class="project-link" href="http://propkingdom.in/" target="_blank" rel="noreferrer">PropKingdom</a>
-            </h3>
-            <p>Corporate real‑estate site: responsive layouts, weekly security audits, Yoast + schema → +40% organic
-              traffic.</p>
-            <p class="stack"><strong>Stack:</strong> WordPress, Elementor, Yoast SEO</p>
-          </article>
-    
-          <!-- WordPress + SEO (Apna Food Truck) -->
-          <article class="p-card" data-tags="wordpress,seo">
-            <h3>
-              <a class="project-link" href="https://obstinatechefs.com/" target="_blank" rel="noreferrer">Apna Food
-                Truck</a>
-            </h3>
-            <p>SEO‑first WordPress site; first‑page ranking in 3 months; +15% organic traffic.</p>
-            <p class="stack"><strong>Stack:</strong> WordPress, Yoast SEO</p>
-          </article>
-    
-          <!-- Java -->
-          <article class="p-card" data-tags="java">
-            <h3>CRYP‑IT</h3>
-            <p>Encrypted password storage & sensitive file management; double encryption.</p>
-            <p class="stack"><strong>Stack:</strong> Java</p>
+          <!-- CRYP-IT -->
+          <article class="p-card">
+            <h3>CRYP-IT</h3>
+            <p>
+              Secure desktop utility for encrypted password and file storage. Uses strong key-derivation and symmetric
+              encryption,
+              enforces complexity policies, and supports emergency recovery codes for business continuity.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Java, AES-256, PBKDF2/Bcrypt</p>
           </article>
         </div>
       </div>
     </section>
+
 
     <!-- Education -->
     <section id="education" class="section">
