@@ -2,7 +2,7 @@ const navList = document.getElementById('navList');
 const menuToggle = document.getElementById('menuToggle');
 const yearEl = document.getElementById('year');
 
-// Mobile menu
+// Mobile menu toggle
 menuToggle?.addEventListener('click', () => {
   const open = navList.classList.toggle('show');
   menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');

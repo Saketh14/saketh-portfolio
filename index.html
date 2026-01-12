@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saketh Uppuluri Sai — Portfolio</title>
-  <meta name="description"
-    content="Portfolio of Saketh Uppuluri Sai — Web Developer skilled in PHP, Laravel, WordPress, Drupal, React, and SEO." />
+  <meta name="description" content="Portfolio of Saketh Uppuluri Sai — Full-stack Web Developer & Data Engineer (PHP, Laravel, WordPress, Drupal, React, AWS, Databricks)." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="assets/avatar.svg" as="image" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saketh Uppuluri Sai — Portfolio" />
+  <meta property="og:description" content="Full-stack Web Developer & Data Engineer — React, PHP, WordPress, AWS, Databricks." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema (update url to your real GitHub Pages URL after deploy) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saketh Uppuluri Sai",
+    "jobTitle": "Full-stack Web Developer & Data Engineer",
+    "email": "mailto:saisakethuppuluri@gmail.com",
+    "telephone": "+16823580556",
+    "sameAs": [
+      "https://www.linkedin.com/in/saketh-uppuluri-sai",
+      "https://github.com/Saketh14"
+    ],
+    "url": "https://yourusername.github.io/your-repo/"
+  }
+  </script>
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Fixed Header -->
   <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="#home">
-        <span class="logo-dot"></span> <span>Saketh Uppuluri Sai.</span>
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="logo-dot" aria-hidden="true"></span> <span>Saketh Uppuluri Sai</span>
       </a>
+
       <div class="nav-actions">
         <button id="menuToggle" class="icon-btn menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
       </div>
+
       <ul id="navList" class="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#certs">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -46,108 +70,136 @@
     <section id="home" class="section hero">
       <div class="hero-inner container">
         <div class="hero-text">
-          <p class="eyebrow">Full-Stack Web Developer</p>
+          <p class="eyebrow">Full-Stack Web Developer • Data Engineer</p>
           <h1>Hi, I’m <span class="accent">Saketh Uppuluri Sai</span></h1>
-          <p class="tagline">PHP • Laravel • WordPress • Drupal • React • SEO</p>
+          <p class="tagline">React • PHP • Laravel • WordPress • Drupal • AWS • Databricks</p>
           <p class="subtag">
-            I craft fast, accessible, and SEO-friendly web experiences. 5+ years across product and agency work, from
-            performance and security to delightful front-end user journeys.
+            I build data-driven web applications with strong UI performance, accessibility, and reliable engineering.
+            Recently built an AI-powered Math Trainer using Gemini 1.5 + Cloudflare Workers.
           </p>
+
           <div class="cta-row">
-            <a class="btn primary" href="assets/Saketh_Uppuluri_Sai_Resume.pdf" download>Download Resume</a>
+            <a class="btn primary" href="assets/Saketh_Uppuluri_Sai_Resume.pdf" target="_blank" download>Download Resume</a>
+            <a class="btn outline" href="#projects">View Projects</a>
           </div>
+
+          <ul class="mini-links">
+            <li><a href="https://github.com/Saketh14" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/saketh-uppuluri-sai" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+
         <div class="hero-media float">
-          <img src="assets/photo.jpeg" width="240" height="240" alt="Avatar placeholder for Saketh" />
+          <img src="assets\photo.jpeg" width="260" height="260" alt="Avatar placeholder for Saketh" />
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section alt">
       <div class="container">
         <h2>About</h2>
         <p>
-          Web developer with 5+ years in full-stack development focused on performance, accessibility, and SEO.
-          Highlights include 40% faster load times with 99.9% uptime through infra re-architecture, +30% engagement and
-          +25% organic traffic through on-page + technical SEO, and an AI-powered image analysis system trained on 10k+
-          images.
+          Full-stack web developer and data engineer with 5 years of experience building data-driven web applications.
+          I focus on clean UI, scalable code, and measurable outcomes like performance, reliability, and SEO.
         </p>
+
+        <div class="grid stats">
+          <article class="stat">
+            <h3>5 Years</h3>
+            <p>Web + data engineering experience</p>
+          </article>
+          <article class="stat">
+            <h3>AI + Serverless</h3>
+            <p>Gemini 1.5 + Cloudflare Workers</p>
+          </article>
+          <article class="stat">
+            <h3>&lt;1% Errors</h3>
+            <p>Reduced Drupal content upload errors</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section alt">
+    <section id="skills" class="section">
       <div class="container">
         <h2>Skills</h2>
         <div class="grid cards">
           <article class="card">
-            <h3>Languages</h3>
-            <p>C, C#, Python, Java, PHP, JavaScript</p>
+            <h3>Programming</h3>
+            <p>C#, Python, Java, PHP, JavaScript (ES6+), Vanilla JS</p>
           </article>
           <article class="card">
             <h3>Web & Frameworks</h3>
-            <p>HTML5, CSS3, Bootstrap, Laravel, WordPress, Drupal, React, Vue.js</p>
+            <p>HTML5, CSS3, Bootstrap, React, Node.js, Laravel, Vue.js, WordPress, Drupal</p>
           </article>
           <article class="card">
-            <h3>Databases</h3>
-            <p>MySQL, MongoDB</p>
+            <h3>Data & Cloud</h3>
+            <p>Databricks, Spark, Delta Lake, AWS (Glue, Redshift, Athena, S3, Lambda, DynamoDB), Azure</p>
           </article>
           <article class="card">
             <h3>Tools</h3>
-            <p>Git, GitHub, VS Code, Linux, Apache</p>
+            <p>Git, GitHub, VS Code, Linux, Apache, Cloudflare Workers, Docker, Terraform</p>
           </article>
           <article class="card">
-            <h3>APIs</h3>
-            <p>REST APIs, JSON</p>
+            <h3>DB & APIs</h3>
+            <p>MySQL, MongoDB, SQL Server, REST, JSON, Prompt Engineering</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="section">
+    <section id="experience" class="section alt">
       <div class="container">
         <h2>Experience</h2>
         <div class="timeline">
           <article class="t-item">
             <header class="t-head">
-              <h3>Sailotech INC — Web Developer Intern</h3><span class="t-meta">Jun 2025 – Present • Columbia, MD</span>
+              <h3>Sailotech INC — Web Developer Intern</h3>
+              <span class="t-meta">Jun 2025 – Present • Columbia, MD</span>
             </header>
             <ul>
-              <li>Built responsive UI with React/Bootstrap; collaborated in sprint planning; zero critical FE defects.
-              </li>
-              <li>Documented features and user guides to streamline client delivery.</li>
+              <li>Built responsive interfaces using HTML, CSS, JavaScript, and React with improved accessibility across devices.</li>
+              <li>Developed reusable React components and integrated frontend modules with cloud-hosted APIs.</li>
+              <li>Supported debugging, testing, and deployments using Git + VS Code for stable releases.</li>
             </ul>
           </article>
+
           <article class="t-item">
             <header class="t-head">
-              <h3>Prop Kingdom — Web Developer</h3><span class="t-meta">Jan 2023 – Jul 2023 • Hyderabad, IN</span>
+              <h3>Prop Kingdom — Web Developer</h3>
+              <span class="t-meta">Jan 2023 – Jul 2023 • Hyderabad, India</span>
             </header>
             <ul>
-              <li>Resolved 100% reported bugs within 24 hours; weekly security audits.</li>
-              <li>Responsive layouts (Elementor + CSS) → +30% mobile engagement.</li>
-              <li>Yoast + schema → +40% organic traffic in 3 months.</li>
+              <li>Maintained WordPress site; resolved 100% reported bugs within 24 hours and ran weekly security audits.</li>
+              <li>Built responsive layouts using Elementor + custom CSS to improve mobile usability.</li>
+              <li>Configured Yoast + schema markup to significantly increase organic traffic within 3 months.</li>
             </ul>
           </article>
+
           <article class="t-item">
             <header class="t-head">
-              <h3>Amazon — D2AS Associate (IP)</h3><span class="t-meta">Sep 2022 – Nov 2022 • Hyderabad, IN</span>
+              <h3>Amazon — D2AS Associate (IP)</h3>
+              <span class="t-meta">Sep 2022 – Nov 2022 • Hyderabad, India</span>
             </header>
             <ul>
-              <li>Guided clients through product features → 20% faster adoption.</li>
-              <li>Reduced support follow-ups with clear, step-by-step onboarding.</li>
+              <li>Guided customers through product features and setup, reducing follow-up support requests.</li>
+              <li>Handled 30+ daily customer interactions with clear step-by-step onboarding.</li>
             </ul>
           </article>
+
           <article class="t-item">
             <header class="t-head">
-              <h3>FOSSEE, IIT Bombay — Project Research Assistant</h3><span class="t-meta">Sep 2020 – Jun 2022 • Mumbai,
-                IN</span>
+              <h3>FOSSEE, IIT Bombay — Project Research Assistant</h3>
+              <span class="t-meta">Sep 2020 – Jun 2022 • Mumbai, India</span>
             </header>
             <ul>
-              <li>PHP/Drupal websites; optimized MySQL for ~30% faster access.</li>
-              <li>25+ custom modules; &lt;1% content upload errors; +20% engagement.</li>
-              <li>Led upgrades to newer Drupal versions; resolved 100+ critical issues.</li>
+              <li>Built secure academic websites using PHP/Drupal/Linux; optimized MySQL schemas for ~30% faster access.</li>
+              <li>Deployed 25+ custom Drupal modules and reduced content upload errors to &lt;1%.</li>
+              <li>Upgraded Drupal versions, improving security and resolving 100+ critical issues.</li>
             </ul>
           </article>
         </div>
@@ -155,51 +207,85 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section alt">
+    <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
+
         <div class="grid project-grid">
           <article class="p-card">
-            <h3><a class="project-link" href="http://propkingdom.in/" target="_blank" rel="noreferrer">PropKingdom</a>
+            <h3>
+              <a class="project-link" href="https://saketh14.github.io/Question-Generator-UI/" target="_blank" rel="noreferrer">Math Trainer (AI)</a>
             </h3>
-            <p>Real-estate portal with advanced property search, responsive layouts, weekly security hardening, and Core
-              Web Vitals optimization. Technical SEO (Yoast + schema.org) lifted organic traffic by ~40% in three
-              months.</p>
-            <p class="stack"><strong>Stack:</strong> WordPress, Elementor, PHP, MySQL, Yoast SEO</p>
+            <p>
+              AI-powered Math Trainer that generates topic/grade/sport-themed problems with MCQ + open-ended modes.
+              Includes progress tracking via localStorage and a clean, accessible Vanilla JS UI.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Gemini 1.5, Cloudflare Workers, Vanilla JS</p>
           </article>
-          <article class="p-card">
-            <h3><a class="project-link" href="https://obstinatechefs.com/" target="_blank" rel="noreferrer">Apna Food
-                Truck</a></h3>
-            <p>SEO-first marketing site with menu management, location schedule, and reviews. Added Restaurant schema,
-              image optimization, and internal links → first-page rankings in ~3 months (+15% organic traffic).</p>
-            <p class="stack"><strong>Stack:</strong> WordPress, PHP, Yoast SEO</p>
-          </article>
-          <article class="p-card">
-            <h3>Traffic Violation Detection</h3>
-            <p>YOLOv5 CV system that flags helmet & speed violations in real-time. Trained on 10k+ images, tuned
-              NMS/conf thresholds, and emits reports with cropped evidence frames. Designed for &lt;100ms
-              inference/frame on GPU.</p>
-            <p class="stack"><strong>Stack:</strong> PyTorch, YOLOv5, OpenCV, Python</p>
-          </article>
+
           <article class="p-card">
             <h3>Personal Finance Tracker</h3>
-            <p>OCR-based receipt capture and auto-categorization web app. Handles 500+ receipts/week, provides monthly
-              dashboards and CSV exports, with validation rules that cut parsing errors significantly.</p>
-            <p class="stack"><strong>Stack:</strong> Python, Selenium, Flask</p>
+            <p>
+              Expense tracking platform with OCR receipt scanning and automated categorization.
+              Interactive dashboards helped drive feature releases and improved engagement.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Python, Selenium, Web Development</p>
           </article>
+
           <article class="p-card">
-            <h3>Volunteer Application</h3>
-            <p>Collaboration tool with contribution tracking and fraud-detection signals (-40% plagiarism). Real-time
-              leaderboard via WebSockets, JWT auth, RBAC, and audit logs for secure workflows.</p>
-            <p class="stack"><strong>Stack:</strong> Laravel, Node.js, React</p>
+            <h3>Traffic Violation Detection System</h3>
+            <p>
+              Real-time image analysis for helmet and speed violations using YOLO models.
+              Trained on 10,000+ labeled images and automated report generation.
+            </p>
+            <p class="stack"><strong>Stack:</strong> YOLOv5, Deep Learning, Python</p>
           </article>
+
           <article class="p-card">
-            <h3>CRYP-IT</h3>
-            <p>Desktop utility for encrypted password & file storage. Strong key derivation + AES-256, recovery codes,
-              and complexity policies; reduced breach risk by ~60%.</p>
-            <p class="stack"><strong>Stack:</strong> Java, AES-256</p>
+            <h3>Volunteer App for MS Graduates (CS)</h3>
+            <p>
+              Contribution tracking system with fraud detection and a real-time leaderboard.
+              WebSockets enable instant updates for collaboration and engagement.
+            </p>
+            <p class="stack"><strong>Stack:</strong> Laravel, Node.js, React, WebSockets</p>
+          </article>
+
+          <article class="p-card">
+            <h3>
+              <a class="project-link" href="http://propkingdom.in/" target="_blank" rel="noreferrer">PropKingdom</a>
+            </h3>
+            <p>
+              WordPress real-estate website with improved mobile UX and technical SEO.
+              Yoast + schema markup contributed to a strong organic traffic boost.
+            </p>
+            <p class="stack"><strong>Stack:</strong> WordPress, Elementor, PHP, MySQL, Yoast SEO</p>
+          </article>
+
+          <article class="p-card">
+            <h3>
+              <a class="project-link" href="https://obstinatechefs.com/" target="_blank" rel="noreferrer">Apna Food Truck</a>
+            </h3>
+            <p>
+              WordPress website revamp with Yoast SEO and keyword research.
+              Achieved first-page ranking for target keywords and increased organic traffic.
+            </p>
+            <p class="stack"><strong>Stack:</strong> WordPress, Yoast SEO</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section alt">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul class="pill-list">
+          <li><strong>AWS Certified Data Engineer – Associate</strong> — Issued Nov 2025</li>
+          <li><strong>Databricks Certified Data Engineer Associate</strong> — Issued Oct 2025</li>
+          <li>Cambridge — Business English Certificate (BEC) B1</li>
+          <li>CISCO — Internet of Things, Cybersecurity, C Programming</li>
+          <li>Microsoft MTA — Database Fundamentals (Sep 2018)</li>
+        </ul>
       </div>
     </section>
 
@@ -214,39 +300,23 @@
           </div>
           <div>
             <h3>Jawaharlal Nehru Technological University — B.Tech in CSE</h3>
-            <p><span>Aug 2016 – May 2020</span> • Hyderabad, IN</p>
+            <p><span>Aug 2016 – May 2020</span> • Hyderabad, Telangana</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certs" class="section alt">
-      <div class="container">
-        <h2>Certifications</h2>
-        <ul class="pill-list">
-          <li>Cambridge — Business English Communication</li>
-          <li>CISCO — IoT, Cybersecurity, C Programming</li>
-          <li>JSON Essentials — LinkedIn Learning (Jul 2025)</li>
-          <li>REST APIs — LinkedIn Learning (Jul 2025)</li>
-          <li>Laravel Essentials — LinkedIn Learning (Jun 2025)</li>
-          <li>Microsoft MTA — Database Fundamentals (Sep 2018)</li>
-          <li>International Blockchain Hackathon — 3rd Place (Oct 2018)</li>
-        </ul>
-      </div>
-    </section>
-
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt">
       <div class="container">
         <h2>Contact</h2>
         <p>Let’s build something exceptional.</p>
         <ul class="contact-list">
           <li>📧 <a href="mailto:saisakethuppuluri@gmail.com">saisakethuppuluri@gmail.com</a></li>
           <li>📞 <a href="tel:+16823580556">+1 (682) 358-0556</a></li>
-          <li>🔗 <a href="https://www.linkedin.com/in/saketh-uppuluri-sai" target="_blank"
-              rel="noreferrer">linkedin.com/in/saketh-uppuluri-sai</a></li>
-          <li>📄 <a href="assets/Saketh_Uppuluri_Sai_Resume.pdf" download>Resume (PDF)</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/saketh-uppuluri-sai" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li>💻 <a href="https://github.com/Saketh14" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li>📄 <a href="assets/Saketh_Uppuluri_Sai_Resume.pdf" target="_blank" download>Resume (PDF)</a></li>
         </ul>
       </div>
     </section>
@@ -261,5 +331,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
